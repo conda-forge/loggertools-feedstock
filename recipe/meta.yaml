@@ -1,6 +1,6 @@
 {% set name = "loggertools" %}
-{% set version = "0.99" %}
-{% set sha256 = "1e09bea1d5265109a5f63a8567281d9789660fb5a8f6d234c8c5607879e79c80" %}
+{% set version = "1.0" %}
+{% set sha256 = "ab167a31c8b0f6f0de7eaabf87714193411286f122d9651e4fc90f7825f28f26" %}
 
 package:
   name: {{ name|lower }}
@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools >=42
     - setuptools_scm >=3.5
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy
 
 test:
